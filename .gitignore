@@ -1,0 +1,6 @@
+venv
+**/*.gguf
+**/index.faiss
+**/index.pkl
+__pycache__/
+.env
