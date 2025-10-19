@@ -38,9 +38,23 @@ if __name__ == "__main__":
 
     rag_llm = RagLLM(llm, retriever)
     
-    while True:
-        query = input("Input: ")
-        if query.lower() in ["exit", "quit"]:
-            break
-        response = rag_llm.invoke(query)
-        print("Response:", response)
+    query = "상대가 꼬부기를 냈을 때 나는 어떤 포켓몬을 내보내면 좋을까?"
+    response = rag_llm.invoke(query)
+    print("Response:", response)
+
+    query = "상대가 파이리를 냈을 때 나는 어떤 포켓몬을 내보내면 좋을까?"
+    response = rag_llm.invoke(query)
+    print("Response:", response)
+
+    query = "상대가 이상해씨를 냈을 때 나는 어떤 포켓몬을 내보내면 좋을까?"
+    response = rag_llm.invoke(query)
+    print("Response:", response)
+
+    query = "상대가 피카츄를 냈을 때 나는 어떤 포켓몬을 내보내면 좋을까?"
+    response = rag_llm.invoke(query)
+    print("Response:", response)
+
+
+
+
+
